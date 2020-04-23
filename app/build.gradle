@@ -1,0 +1,130 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'//kapt 插件
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.wang.basekotlinmvvm"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            android.applicationVariants.all {
+                outputs.all {
+                    outputFileName = "baseMvvm_" + buildType.name + "-v" + defaultConfig.versionCode + "_" + defaultConfig.versionName + ".apk"
+                }
+            }
+        }
+
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            android.applicationVariants.all {
+                outputs.all {
+                    outputFileName = "base_mvvm_" + buildType.name + "-v" + defaultConfig.versionCode + "_" + defaultConfig.versionName + ".apk"
+                }
+            }
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    "com.android.databinding:compiler:$gradle_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.drawerlayout:drawerlayout:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.core:core-ktx:1.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //方法数超过问题
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //google aac activity/fragment 生命周期
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    //下滑/左滑/右滑 关闭activity
+    implementation 'me.imid.swipebacklayout.lib:library:1.1.0'
+
+    //响应式框架
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.19'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    //权限
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    //network
+    implementation 'com.squareup.okhttp3:okhttp:4.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.4.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.7.2'
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+
+    //下拉刷新控件
+    // 注意：分包之后不会有默认的Header和Footer需要手动添加！还是原来的三种方法！
+    implementation 'com.scwang.smart:refresh-layout-kernel:2.0.0-alpha-1'      //核心必须依赖
+    implementation 'com.scwang.smart:refresh-header-classics:2.0.0-alpha-1'    //经典刷新头
+    implementation 'com.scwang.smart:refresh-header-falsify:2.0.0-alpha-1'     //虚拟刷新头
+    implementation 'com.scwang.smart:refresh-header-material:2.0.0-alpha-1'    //谷歌刷新头
+    implementation 'com.scwang.smart:refresh-header-two-level:2.0.0-alpha-1'   //二级刷新头
+    implementation 'com.scwang.smart:refresh-footer-classics:2.0.0-alpha-1'    //经典加载
+
+    //recyclerView adapter 支持Androidx
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.1'
+
+    //基础工具类
+    implementation 'com.blankj:utilcodex:1.26.0'
+
+    //recyclerView adapter 支持Androidx
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.1'
+
+    //分割线
+    implementation 'com.yqritc:recyclerview-flexibledivider:1.4.0'
+
+    //圆形图片
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //带数字的进度条
+    implementation 'com.daimajia.numberprogressbar:library:1.4@aar'
+}
