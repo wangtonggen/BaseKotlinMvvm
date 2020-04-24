@@ -1,4 +1,4 @@
-package com.wang.basekotlinmvvm.constant
+package com.wang.basemvvmkotlin.constant
 
 import me.imid.swipebacklayout.lib.SwipeBackLayout
 

@@ -1,4 +1,4 @@
-package com.wang.basekotlinmvvm.utils.common
+package com.wang.basemvvmkotlin.utils.common
 
 import android.util.Log
 import com.wang.basekotlinmvvm.BuildConfig

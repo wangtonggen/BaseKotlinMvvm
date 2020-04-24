@@ -1,4 +1,4 @@
-package com.wang.basekotlinmvvm.base.baseFragment
+package com.wang.basemvvmkotlin.base.baseFragment
 
 import android.app.Activity
 import android.content.Context

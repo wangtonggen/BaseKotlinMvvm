@@ -1,8 +1,8 @@
-package com.wang.basekotlinmvvm.base.baseViewModel
+package com.wang.basemvvmkotlin.base.baseViewModel
 
 import android.os.Bundle
 import android.view.View
-import com.wang.basekotlinmvvm.base.baseActivity.BaseActivity
+import com.wang.basemvvmkotlin.base.baseActivity.BaseActivity
 
 /**
  * author: wtg

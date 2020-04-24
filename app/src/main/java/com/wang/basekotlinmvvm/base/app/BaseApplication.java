@@ -9,7 +9,7 @@ import com.scwang.smart.refresh.footer.ClassicsFooter;
 import com.scwang.smart.refresh.header.ClassicsHeader;
 import com.scwang.smart.refresh.layout.SmartRefreshLayout;
 import com.wang.basekotlinmvvm.R;
-import com.wang.basekotlinmvvm.utils.system.CrashHandlerUtils;
+import com.wang.basemvvmkotlin.utils.system.CrashHandlerUtils;
 
 /**
  * author: wtg

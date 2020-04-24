@@ -1,14 +1,16 @@
-package com.wang.basekotlinmvvm
+package com.wang.basekotlinmvvm.ui
 
-import com.wang.basekotlinmvvm.base.baseActivity.BaseSwipeBackActivity
-import com.wang.basekotlinmvvm.constant.SwipeConstant
+import com.wang.basekotlinmvvm.BR
+import com.wang.basekotlinmvvm.R
 import com.wang.basekotlinmvvm.databinding.ActivityMainBinding
-import com.wang.basekotlinmvvm.mvvm.viewModel.MainVM
+import com.wang.basemvvmkotlin.base.baseActivity.BaseSwipeBackActivity
+import com.wang.basemvvmkotlin.constant.SwipeConstant
+import com.wang.basemvvmkotlin.mvvm.viewModel.MainVM
 
 /**
  * 主界面
  */
-class MainActivity : BaseSwipeBackActivity<ActivityMainBinding,MainVM>() {
+class MainActivity : BaseSwipeBackActivity<ActivityMainBinding, MainVM>() {
     override fun initView() {
         super.initView()
     }

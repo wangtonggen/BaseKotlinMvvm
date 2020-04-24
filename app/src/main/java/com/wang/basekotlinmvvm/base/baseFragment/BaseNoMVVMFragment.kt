@@ -1,4 +1,4 @@
-package com.wang.basekotlinmvvm.base.baseFragment
+package com.wang.basemvvmkotlin.base.baseFragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

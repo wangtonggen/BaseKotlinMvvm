@@ -1,7 +1,7 @@
-package com.wang.basekotlinmvvm.base.baseViewModel
+package com.wang.basemvvmkotlin.base.baseViewModel
 
 import android.content.Context
-import com.wang.basekotlinmvvm.base.baseFragment.BaseFragment
+import com.wang.basemvvmkotlin.base.baseFragment.BaseFragment
 
 /**
  * author: wtg

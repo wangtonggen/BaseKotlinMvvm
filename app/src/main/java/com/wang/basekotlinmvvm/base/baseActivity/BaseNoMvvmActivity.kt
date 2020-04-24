@@ -1,7 +1,7 @@
-package com.wang.basekotlinmvvm.base.baseActivity
+package com.wang.basemvvmkotlin.base.baseActivity
 
 import android.os.Bundle
-import com.wang.basekotlinmvvm.constant.SwipeConstant
+import com.wang.basemvvmkotlin.constant.SwipeConstant
 
 /**
  *

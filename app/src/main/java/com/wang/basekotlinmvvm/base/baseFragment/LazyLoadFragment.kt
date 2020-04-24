@@ -1,7 +1,7 @@
-package com.wang.basekotlinmvvm.base.baseFragment
+package com.wang.basemvvmkotlin.base.baseFragment
 
 import androidx.databinding.ViewDataBinding
-import com.wang.basekotlinmvvm.base.baseViewModel.BaseLifecycleVM
+import com.wang.basemvvmkotlin.base.baseViewModel.BaseLifecycleVM
 
 /**
  * author: wtg

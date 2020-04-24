@@ -1,4 +1,4 @@
-package com.wang.basekotlinmvvm.utils
+package com.wang.basemvvmkotlin.utils.common
 
 import android.app.Activity
 import android.app.ActivityManager
@@ -23,7 +23,8 @@ class ActivityManagerUtils private constructor() {
         private var instance: ActivityManagerUtils? = null
             get() {
                 if (field == null) {
-                    field = ActivityManagerUtils()
+                    field =
+                        ActivityManagerUtils()
                 }
                 return field
             }

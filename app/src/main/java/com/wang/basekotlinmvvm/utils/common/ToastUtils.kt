@@ -1,4 +1,4 @@
-package com.wang.basekotlinmvvm.utils.common
+package com.wang.basemvvmkotlin.utils.common
 
 import android.content.Context
 import android.widget.Toast

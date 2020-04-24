@@ -1,8 +1,8 @@
-package com.wang.basekotlinmvvm.mvvm.viewModel
+package com.wang.basemvvmkotlin.mvvm.viewModel
 
 import androidx.databinding.ObservableField
-import com.wang.basekotlinmvvm.base.baseActivity.BaseActivity
-import com.wang.basekotlinmvvm.base.baseViewModel.BaseActivityLifecycleVM
+import com.wang.basemvvmkotlin.base.baseActivity.BaseActivity
+import com.wang.basemvvmkotlin.base.baseViewModel.BaseActivityLifecycleVM
 
 /**
  *

@@ -1,4 +1,4 @@
-package com.wang.basekotlinmvvm.base.baseViewModel
+package com.wang.basemvvmkotlin.base.baseViewModel
 
 import android.view.View
 

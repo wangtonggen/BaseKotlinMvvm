@@ -1,4 +1,4 @@
-package com.wang.basekotlinmvvm.base.baseFragment
+package com.wang.basemvvmkotlin.base.baseFragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
-import com.wang.basekotlinmvvm.base.baseViewModel.BaseLifecycleVM
+import com.wang.basemvvmkotlin.base.baseViewModel.BaseLifecycleVM
 
 /**
  * author: wtg

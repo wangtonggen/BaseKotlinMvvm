@@ -1,9 +1,9 @@
-package com.wang.basekotlinmvvm.base.baseActivity
+package com.wang.basemvvmkotlin.base.baseActivity
 
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
-import com.wang.basekotlinmvvm.base.baseViewModel.BaseLifecycleVM
+import com.wang.basemvvmkotlin.base.baseViewModel.BaseLifecycleVM
 
 /**
  *

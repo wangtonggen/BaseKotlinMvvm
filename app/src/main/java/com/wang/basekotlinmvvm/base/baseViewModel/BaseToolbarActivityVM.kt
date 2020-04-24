@@ -1,10 +1,10 @@
-package com.wang.basekotlinmvvm.base.baseViewModel
+package com.wang.basemvvmkotlin.base.baseViewModel
 
 import androidx.databinding.ObservableBoolean
 import androidx.databinding.ObservableField
 import androidx.databinding.ObservableInt
 import com.wang.basekotlinmvvm.R
-import com.wang.basekotlinmvvm.base.baseActivity.BaseActivity
+import com.wang.basemvvmkotlin.base.baseActivity.BaseActivity
 
 /**
  * author: wtg

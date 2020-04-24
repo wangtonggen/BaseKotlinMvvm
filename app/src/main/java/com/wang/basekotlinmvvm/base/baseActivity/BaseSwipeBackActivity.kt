@@ -1,8 +1,8 @@
-package com.wang.basekotlinmvvm.base.baseActivity
+package com.wang.basemvvmkotlin.base.baseActivity
 
 import androidx.databinding.ViewDataBinding
-import com.wang.basekotlinmvvm.base.baseViewModel.BaseLifecycleVM
-import com.wang.basekotlinmvvm.constant.SwipeConstant
+import com.wang.basemvvmkotlin.base.baseViewModel.BaseLifecycleVM
+import com.wang.basemvvmkotlin.constant.SwipeConstant
 
 /**
  *

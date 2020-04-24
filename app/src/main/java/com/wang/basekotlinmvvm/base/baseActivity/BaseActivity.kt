@@ -1,8 +1,8 @@
-package com.wang.basekotlinmvvm.base.baseActivity
+package com.wang.basemvvmkotlin.base.baseActivity
 
 import android.os.Bundle
 import androidx.annotation.LayoutRes
-import com.wang.basekotlinmvvm.utils.ActivityManagerUtils
+import com.wang.basemvvmkotlin.utils.common.ActivityManagerUtils
 import me.imid.swipebacklayout.lib.app.SwipeBackActivity
 
 /**

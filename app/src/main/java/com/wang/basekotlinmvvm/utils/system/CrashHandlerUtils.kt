@@ -1,4 +1,4 @@
-package com.wang.basekotlinmvvm.utils.system
+package com.wang.basemvvmkotlin.utils.system
 
 import android.content.Context
 import android.os.Build
@@ -7,9 +7,9 @@ import android.os.Process
 import com.blankj.utilcode.util.AppUtils
 import com.blankj.utilcode.util.FileUtils
 import com.blankj.utilcode.util.SDCardUtils
-import com.wang.basekotlinmvvm.constant.FileConstant.DIR_CRASH
-import com.wang.basekotlinmvvm.utils.common.LogUtils
-import com.wang.basekotlinmvvm.utils.common.ToastUtils
+import com.wang.basemvvmkotlin.constant.FileConstant.DIR_CRASH
+import com.wang.basemvvmkotlin.utils.common.LogUtils
+import com.wang.basemvvmkotlin.utils.common.ToastUtils
 import java.io.*
 import java.text.DateFormat
 import java.text.SimpleDateFormat
